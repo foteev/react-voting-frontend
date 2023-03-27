@@ -17,7 +17,8 @@ function PollVote({ APP_CONTRACT_ADDRESS }) {
     allPolls: [poll],
     userAddr: '',
     retrievingPolls: false,
-    processingVote: false
+    processingVote: false,
+    isAvailable: false,
   });
 
   useEffect(() => {
@@ -57,9 +58,11 @@ function PollVote({ APP_CONTRACT_ADDRESS }) {
             allPolls: polls,
             userAddr: userAddr,
             retrievingPolls: false
-          }));
-        ;
-      }));
+          }))
+      }))
+
+      const votings = await contract.votings(userAddr);
+      console.log(votings);
 
     } catch (err) {
       console.log('Error getting polls ==>', err);

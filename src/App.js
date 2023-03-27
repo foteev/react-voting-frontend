@@ -8,7 +8,7 @@ import './App.css';
 import { useState } from 'react';
 
 function App() {
-  const [address, setAddress] = useState('0x0B306BF915C4d645ff596e518fAf3F9669b97016');
+  const [address, setAddress] = useState('0x0b306bf915c4d645ff596e518faf3f9669b97016');
 
   const handleInputChange = (event) => {
     setAddress( event.target.value)
