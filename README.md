@@ -71,7 +71,7 @@ https://bnbverse-voting-app.netlify.app/
 -   Clone the repository and copy all code from file
   
     ```
-     './contracts/VotingSystem.sol
+     ('./contracts/VotingSystem.sol')VotingSystem.sol
     ```
     
 -   Open Remix
