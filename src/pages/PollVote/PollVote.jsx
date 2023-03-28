@@ -79,6 +79,10 @@ function PollVote({ APP_CONTRACT_ADDRESS }) {
       return <React.Fragment key={poll.name}>
         <form
           className="form voteForm"
+          onSubmit={(e) => {
+            e.preventDefault();
+            alert(`It's not working (`)
+          }}
           >
             <h2 className="subHeader">{poll.name}</h2>
             <input
