@@ -6,9 +6,10 @@ import PollReset from './pages/PollReset/PollReset';
 import VoteTokens from './pages/VoteTokens/VoteTokens';
 import './App.css';
 import { useState } from 'react';
+import { APP_CONTRACT_ADDRESS } from './constants';
 
 function App() {
-  const [address, setAddress] = useState('0x5d60b94E52176E0439336eCaB7CE6E41a7D3e16b');
+  const [address, setAddress] = useState(APP_CONTRACT_ADDRESS);
 
   const handleInputChange = (event) => {
     setAddress( event.target.value)

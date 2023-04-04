@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { Redirect } from 'react-router-dom';
 import { ethers } from 'ethers';
 import AppContract from '../../artifacts/contracts/VotingSystem.sol/VotingSystem.json';
-import { APP_CONTRACT_ADDRESS } from '../../constants';
 import './PollCreate.css';
 import '../../form.css';
 
